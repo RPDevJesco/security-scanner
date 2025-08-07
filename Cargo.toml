@@ -2,9 +2,12 @@
 name = "security-scanner"
 version = "0.1.0"
 edition = "2021"
-description = "Lightweight security testing attributes for Rust applications"
+description = "Embedded security testing framework for Rust applications"
 license = "MIT"
-repository = "https://github.com/rpdevjesco/security-scanner"
+repository = "https://github.com/RPDevJesco/security-scanner"
+authors = ["Jesse Glover <jesco@gamedevmadeeasy.com>"]
+keywords = ["security", "testing", "vulnerability", "scanning"]
+categories = ["development-tools", "development-tools::testing"]
 
 [lib]
 proc-macro = true
@@ -12,5 +15,4 @@ proc-macro = true
 [dependencies]
 proc-macro2 = "1.0"
 quote = "1.0"
-syn = { version = "2.0", features = ["full", "parsing", "printing"] }
-serde = { version = "1.0", features = ["derive"] }
+syn = { version = "2.0", features = ["full"] }
